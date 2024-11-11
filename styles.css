@@ -53,7 +53,7 @@ aside > p > a{
 }
 
 main > header{
-    background-color: rgb(244, 244, 244);
+    background-color: #f4f4f4;
     padding-top: 50px;
     padding-left: 40px;
     padding-right: 180px;
@@ -92,10 +92,11 @@ main > form label{
     display: inline;
 }
 
-main > form input{
+main > form input {
     display: block;
     margin: 0px 24px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    padding-left: 8px;
     border-radius: 4px;
     border: 2px solid #E5E7EB;
     width: 260px;
@@ -103,3 +104,65 @@ main > form input{
     font-size: 16px;
 }
 
+main > form input:focus {
+    box-shadow: 2px 2px 5px #bebebe;
+    border: 2px solid #1d79ae;
+    outline: none;
+}
+
+main > form input[name=password] {
+    margin-bottom: 2px;
+}
+
+main > form input[name=confirmpassword] {
+    margin-bottom: 50px;
+}
+
+/* Change border color to red when input is invalid */
+main > form input[type=password]:invalid {
+    border: 2px solid #a90000;
+}
+
+/* Show error message when input is invalid */
+main > form input[type=password]:invalid + .error-message {
+    display: block;
+}
+
+/* Error message styling */
+main > form .error-message {
+    color: #a90000;
+    font-size: 14px;
+    margin: 0;
+    margin-left: 25px;
+    display: none;
+}
+
+
+main > .submit{
+    background-color: #f4f4f4;
+    height: 31vh;
+}
+
+main > .submit > button{
+    border: 0;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 12px 50px;
+    color: white;
+    background-color: #d68c4f;
+    margin-top: 30px;
+    margin-left: 40px;
+    box-shadow: 2px 2px 5px #bebebe;
+    cursor: pointer;
+}
+
+main > .submit > p{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+main > .submit > p > a{
+    text-decoration: none;
+    color: #d68c4f;
+    font-weight: 600;
+}

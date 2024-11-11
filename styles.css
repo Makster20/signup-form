@@ -16,6 +16,10 @@ aside{
     background-position: center;
     height: 100vh; /* Full viewport height */
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 aside > div{
@@ -24,6 +28,7 @@ aside > div{
     margin-top: 200px;
     justify-content: center;
     align-items: center;
+    width: 100%;
     padding: 16px 0px;
 }
 
@@ -31,10 +36,35 @@ aside > div > img{
     width: 100px;
     height: 130px;
 }
-
-aside > div > h3{
+side > div > h3{
     font-family: 'norse';
     color: white;
     font-size: 90px;
     margin: 0;
+}
+
+aside > p{
+    color: white;
+    margin-top: 325px;
+}
+
+aside > p > a{
+    color: white;
+}
+
+main > header{
+    background-color: rgb(244, 244, 244);
+    padding-top: 140px;
+    padding-left: 40px;
+    padding-right: 180px;
+    padding-bottom: 65px;
+}
+
+main > header > h1{
+    margin: 0;
+    font-size: 23px;
+}
+
+main > header > .know{
+    margin-top: 20px;
 }
